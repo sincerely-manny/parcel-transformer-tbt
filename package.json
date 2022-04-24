@@ -1,0 +1,20 @@
+{
+    "name": "@sincerely-manny/parcel-transformer-tbt",
+    "version": "0.1",
+    "description": "Transform .tbt to js",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/sincerely-manny/parcel-transformer-tbt"
+    },
+    "license": "ISC",
+    "engines": {
+      "parcel": "2.x"
+    },
+    "devDependencies": {},
+    "author": "",
+    "keywords": []
+  }
