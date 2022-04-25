@@ -1,14 +1,15 @@
-import {Transformer} from '@parcel/plugin';
+const { Transformer } = require('@parcel/plugin');
 
-export default new Transformer({
+const transformer = new Transformer({
   async transform({asset}) {
     let source = await asset.getCode();
    
-    let code = `(function() {return \`${source}\`})()`;
+    let code = `export default \`${source.replace('`', '\`')}\`;`;
     asset.type = 'js';
     asset.setCode(code);
 
-    // Return the asset
     return [asset];
   }
 });
+
+module.exports = transformer;
